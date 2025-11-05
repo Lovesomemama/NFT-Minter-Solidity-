@@ -7,6 +7,7 @@ contract MyNFT is ERC721 {
     uint256 public tokenId;
     constructor() ERC721("MyNFT", "MNFT") {}
 
+// Mint a new NFT to the caller and increment ID
     function mint() public {
         _safeMint(msg.sender, tokenId++);
     }
