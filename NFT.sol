@@ -9,6 +9,7 @@ contract MyNFT is ERC721 {
 
 // Mint a new NFT to the caller and increment ID
     function mint() public {
+        require(tokenId < 1000, "Max supply reached");
         _safeMint(msg.sender, tokenId++);
     }
 }
