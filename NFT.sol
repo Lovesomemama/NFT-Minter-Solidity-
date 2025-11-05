@@ -13,3 +13,4 @@ contract MyNFT is ERC721 {
         _safeMint(msg.sender, tokenId++);
     }
 }
+// End of NFT contract
